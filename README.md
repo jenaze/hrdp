@@ -1,11 +1,11 @@
-# RDP_COFFIN
+# RDP_HSH
 > **2CPU & 7GB RAM**
 
 > ## Last Update 2021/06/11
 
 > ## [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/c9ffin/RDP_COFFIN/blob/main/.github/workflows/coffin.yml)
 
-## You are not allowed to modify the project.
+## STFU
 ***
 * Click Fork in the right corner of the screen to save it to your Github.
 * Visit https://dashboard.ngrok.com to get **NGROK_AUTH_TOKEN**
