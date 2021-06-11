@@ -3,9 +3,7 @@
 
 > ## Last Update 2021/06/11
 
-
 > ## [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/c9ffin/RDP_COFFIN/blob/main/.github/workflows/coffin.yml)
-> Do not forget to add a star to the repository if it is useful, in order to encourage us for more efforts,Thank.
 
 ## You are not allowed to modify the project.
 ***
@@ -19,7 +17,4 @@
 * Reload the page and press RDP_COFFIN> build
 * Press the down arrow on Connect To Your RPD to get IP, User, Password.
 > If you have any questions, contact me in Discord:
-> https://discord.gg/fgsK9wqWhQ
-## Original Repositor :
-> https://github.com/c9ffin/rdp
 ***
