@@ -3,7 +3,7 @@
 
 > ## Last Update 2021/06/11
 
-> ## [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/c9ffin/RDP_COFFIN/blob/main/.github/workflows/coffin.yml)
+> ## [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/jenaze/hrdp/RDP_HSH/blob/main/.github/workflows/coffin.yml)
 
 ## STFU
 ***
@@ -13,7 +13,7 @@
 * In Name: enter **NGROK_AUTH_TOKEN**
 * In Value: visit https://dashboard.ngrok.com/auth/your-authtoken Copy and Paste Your Authtoken into
 * Press Add secret
-* Go to Action> RDP_COFFIN> Run workflow
-* Reload the page and press RDP_COFFIN> build
+* Go to Action> RDP_HSH> Run workflow
+* Reload the page and press RDP_HSH> build
 * Press the down arrow on Connect To Your RPD to get IP, User, Password.
 ***
