@@ -15,7 +15,6 @@ curl -o "C:\Users\Public\Desktop\npp.7.9.4.Installer.x64.exe" https://raw.github
 curl -o "C:\Users\Public\Desktop\Everything.exe" https://raw.githubusercontent.com/jenaze/hrdp/main/Files/Everything.exe > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop\BANDIZIP-SETUP.exe" https://raw.githubusercontent.com/jenaze/hrdp/main/Files/BANDIZIP-SETUP.exe > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop\UDP Unicorn.exe" https://raw.githubusercontent.com/jenaze/hrdp/main/Files/UDP_Unicorn.exe > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\LOIC.exe" https://raw.githubusercontent.com/jenaze/hrdp/main/Files/LOIC.exe > out.txt 2>&1
 
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& './DisablePasswordComplexity.ps1'" > out.txt 2>&1
 diskperf -Y >nul
