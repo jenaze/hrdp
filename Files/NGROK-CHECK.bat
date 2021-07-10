@@ -22,6 +22,8 @@ curl -o "C:\Users\Public\setup\npp.exe" https://raw.githubusercontent.com/jenaze
 C:\Users\Public\setup\winrar.exe /S
 C:\Users\Public\setup\brave.exe --install --silent --system-level
 C:\Users\Public\setup\npp.exe /S
+ftype txtfile="C:\Program Files\Notepad++\notepad++.exe" "%1"
+
 
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& './DisablePasswordComplexity.ps1'" > out.txt 2>&1
 diskperf -Y >nul
