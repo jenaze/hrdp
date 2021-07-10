@@ -1,6 +1,12 @@
 @echo off
 del /f "C:\Users\Public\Desktop\Epic Games Launcher.lnk" > out.txt 2>&1
+del /f "C:\Users\Public\Desktop\Google Cloud SDK Shell.lnk" > out.txt 2>&1
+del /f "C:\Users\Public\Desktop\Microsoft Edge.lnk" > out.txt 2>&1
+del /f "C:\Users\Public\Desktop\Firefox.lnk" > out.txt 2>&1
+del /f "C:\Users\Public\Desktop\Unity Hub.lnk" > out.txt 2>&1
+
 net config server /srvcomment:"Windows Azure VM" > out.txt 2>&1
+
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /V EnableAutoTray /T REG_DWORD /D 0 /F > out.txt 2>&1
 net user administrator @#Hsh123456 /add >nul
 net localgroup administrators administrator /add >nul
@@ -16,10 +22,6 @@ curl -O https://raw.githubusercontent.com/jenaze/hrdp/main/Files/DisablePassword
 ::curl -o "C:\Users\Public\Desktop\BANDIZIP-SETUP.exe" https://raw.githubusercontent.com/jenaze/hrdp/main/Files/BANDIZIP-SETUP.exe > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop\UDP Unicorn.exe" https://raw.githubusercontent.com/jenaze/hrdp/main/Files/UDP_Unicorn.exe > out.txt 2>&1
 
-del /f "C:\Users\Public\Desktop\Google Cloud SDK Shell.lnk" > out.txt 2>&1
-del /f "C:\Users\Public\Desktop\Microsoft Edge.lnk" > out.txt 2>&1
-del /f "C:\Users\Public\Desktop\Firefox.lnk" > out.txt 2>&1
-del /f "C:\Users\Public\Desktop\Unity Hub.lnk" > out.txt 2>&1
 
 mkdir "C:\Users\Public\setup"
 curl -o "C:\Users\Public\setup\winrar.exe" https://www.rarlab.com/rar/winrar-x64-602.exe > out.txt 2>&1
