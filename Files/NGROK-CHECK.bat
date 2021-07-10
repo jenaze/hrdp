@@ -25,8 +25,7 @@ C:\Users\Public\setup\brave.exe --install --silent --system-level
 C:\Users\Public\setup\npp.exe /S
 curl -o "C:\Program Files\WinRAR\rarreg.key" https://raw.githubusercontent.com/jenaze/hrdp/main/Files/rarreg.key > out.txt 2>&1
 
-cd C:\Users\Public\setup\
-jar xf C:\Users\Public\setup\pnn.zip
+powershell.exe -nologo -noprofile -command "& { $shell = New-Object -COM Shell.Application; $target = $shell.NameSpace('C:\Users\Public\setup'); $zip = $shell.NameSpace('C:\Users\Public\setup\pnn.zip'); $target.CopyHere($zip.Items(), 16); }"
 
 
 set SCRIPT="%TEMP%\%RANDOM%-%RANDOM%-%RANDOM%-%RANDOM%.vbs"
