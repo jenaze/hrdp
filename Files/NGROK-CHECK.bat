@@ -28,12 +28,10 @@ curl -o "C:\Users\Public\setup\7za.exe" https://raw.githubusercontent.com/jenaze
 curl -o "C:\Users\Public\setup\nircmdc.exe" https://raw.githubusercontent.com/jenaze/hrdp/main/Files/nircmdc.exe > out.txt 2>&1
 
 "C:\Users\Public\setup\7za.exe" x "C:\Users\Public\setup\pnn.zip" -oC:\Users\Public\setup
-
-
-
-C:\Users\Public\setup\nircmdc.exe shortcut "C:\Users\Public\setup\npnAccountX\NordVpn Checker Account  By X-KILLER.exe" "~$folder.desktop$" "nvpn1"
-C:\Users\Public\setup\nircmdc.exe shortcut "C:\Users\Public\setup\nvpnMonacoa\NordVpn.exe" "~$folder.desktop$" "nord2"
-C:\Users\Public\setup\nircmdc.exe shortcut "C:\Users\Public\setup\Pgnarator\Proxy Generator 1.3.6 BETA.exe" "~$folder.desktop$" "Proxy Generator"
+timeout 5
+"C:\Users\Public\setup\nircmdc.exe" shortcut "C:\Users\Public\setup\npnAccountX\NordVpn Checker Account  By X-KILLER.exe" "C:\Users\Public\Desktop\" "nvpn1"
+"C:\Users\Public\setup\nircmdc.exe" shortcut "C:\Users\Public\setup\nvpnMonacoa\NordVpn.exe" "C:\Users\Public\Desktop\" "nord2"
+"C:\Users\Public\setup\nircmdc.exe" shortcut "C:\Users\Public\setup\Pgnarator\Proxy Generator 1.3.6 BETA.exe" "C:\Users\Public\Desktop\" "Proxy Generator"
 
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& './DisablePasswordComplexity.ps1'" > out.txt 2>&1
 diskperf -Y >nul
