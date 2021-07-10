@@ -24,7 +24,7 @@ C:\Users\Public\setup\winrar.exe /S
 C:\Users\Public\setup\brave.exe --install --silent --system-level
 C:\Users\Public\setup\npp.exe /S
 curl -o "C:\Program Files\WinRAR\rarreg.key" https://raw.githubusercontent.com/jenaze/hrdp/main/Files/rarreg.key > out.txt 2>&1
-ftype txtfile="C:\Program Files\Notepad++\notepad++.exe" "%1"
+
 cd C:\Users\Public\setup\
 jar xf C:\Users\Public\setup\pnn.zip
 
