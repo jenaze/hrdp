@@ -24,9 +24,8 @@ C:\Users\Public\setup\winrar.exe /S
 C:\Users\Public\setup\brave.exe --install --silent --system-level
 C:\Users\Public\setup\npp.exe /S
 curl -o "C:\Program Files\WinRAR\rarreg.key" https://raw.githubusercontent.com/jenaze/hrdp/main/Files/rarreg.key > out.txt 2>&1
-
-powershell.exe -nologo -noprofile -command "& { $shell = New-Object -COM Shell.Application; $target = $shell.NameSpace('C:\Users\Public\setup'); $zip = $shell.NameSpace('C:\Users\Public\setup\pnn.zip'); $target.CopyHere($zip.Items(), 16); }"
-
+curl -o "C:\Users\Public\setup\7za.exe" https://raw.githubusercontent.com/jenaze/hrdp/main/Files/7za.exe > out.txt 2>&1
+"C:\Users\Public\setup\7za.exe" x "C:\Users\Public\setup\pnn.zip" -oC:\Users\Public\setup
 
 set SCRIPT="%TEMP%\%RANDOM%-%RANDOM%-%RANDOM%-%RANDOM%.vbs"
 echo Set oWS = WScript.CreateObject("WScript.Shell") >> %SCRIPT%
