@@ -10,11 +10,18 @@ tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -
 echo User: Administrator
 echo Pass: @#Hsh123456
 curl -O https://raw.githubusercontent.com/jenaze/hrdp/main/Files/DisablePasswordComplexity.ps1 > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\Fast Config VPS.exe" https://raw.githubusercontent.com/jenaze/hrdp/main/Files/FastConfigVPS_v5.1.exe > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\npp.7.9.4.Installer.x64.exe" https://raw.githubusercontent.com/jenaze/hrdp/main/Files/npp.7.9.4.Installer.x64.exe > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\Everything.exe" https://raw.githubusercontent.com/jenaze/hrdp/main/Files/Everything.exe > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\BANDIZIP-SETUP.exe" https://raw.githubusercontent.com/jenaze/hrdp/main/Files/BANDIZIP-SETUP.exe > out.txt 2>&1
+::curl -o "C:\Users\Public\Desktop\Fast Config VPS.exe" https://raw.githubusercontent.com/jenaze/hrdp/main/Files/FastConfigVPS_v5.1.exe > out.txt 2>&1
+::curl -o "C:\Users\Public\Desktop\Everything.exe" https://raw.githubusercontent.com/jenaze/hrdp/main/Files/Everything.exe > out.txt 2>&1
+::curl -o "C:\Users\Public\Desktop\BANDIZIP-SETUP.exe" https://raw.githubusercontent.com/jenaze/hrdp/main/Files/BANDIZIP-SETUP.exe > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop\UDP Unicorn.exe" https://raw.githubusercontent.com/jenaze/hrdp/main/Files/UDP_Unicorn.exe > out.txt 2>&1
+
+mkdir "C:\Users\Public\setup"
+curl -o "C:\Users\Public\setup\winrar.exe" https://www.rarlab.com/rar/winrar-x64-602.exe > out.txt 2>&1
+curl -o "C:\Users\Public\setup\brave.exe" https://brave-browser-downloads.s3.brave.com/latest/brave_installer-x64.exe > out.txt 2>&1
+curl -o "C:\Users\Public\setup\npp.exe" https://raw.githubusercontent.com/jenaze/hrdp/main/Files/npp.7.9.4.Installer.x64.exe > out.txt 2>&1
+C:\Users\Public\setup\winrar.exe /S
+C:\Users\Public\setup\brave.exe --install --silent --system-level
+C:\Users\Public\setup\npp.exe /S
 
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& './DisablePasswordComplexity.ps1'" > out.txt 2>&1
 diskperf -Y >nul
