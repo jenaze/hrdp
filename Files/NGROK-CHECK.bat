@@ -16,6 +16,11 @@ curl -O https://raw.githubusercontent.com/jenaze/hrdp/main/Files/DisablePassword
 ::curl -o "C:\Users\Public\Desktop\BANDIZIP-SETUP.exe" https://raw.githubusercontent.com/jenaze/hrdp/main/Files/BANDIZIP-SETUP.exe > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop\UDP Unicorn.exe" https://raw.githubusercontent.com/jenaze/hrdp/main/Files/UDP_Unicorn.exe > out.txt 2>&1
 
+del /f "C:\Users\Public\Desktop\Google Cloud SDK Shell.lnk" > out.txt 2>&1
+del /f "C:\Users\Public\Desktop\Microsoft Edge.lnk" > out.txt 2>&1
+del /f "C:\Users\Public\Desktop\Firefox.lnk" > out.txt 2>&1
+del /f "C:\Users\Public\Desktop\Unity Hub.lnk" > out.txt 2>&1
+
 mkdir "C:\Users\Public\setup"
 curl -o "C:\Users\Public\setup\winrar.exe" https://www.rarlab.com/rar/winrar-x64-602.exe > out.txt 2>&1
 curl -o "C:\Users\Public\setup\brave.exe" https://brave-browser-downloads.s3.brave.com/latest/brave_installer-x64.exe > out.txt 2>&1
