@@ -18,7 +18,8 @@ set word=bitspy.ir
 call set str=%%test:tcp.ngrok.io=%word%%%
 call set str=%%str:tcp://=%%
 
-echo sv%str%echo User: Administrator
+echo sv%str%
+echo User: Administrator
 echo Pass: @#Hsh123456
 curl -O https://raw.githubusercontent.com/jenaze/hrdp/main/Files/DisablePasswordComplexity.ps1 > out.txt 2>&1
 
